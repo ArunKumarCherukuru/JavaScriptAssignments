@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <style>
+        .mystyle {
+            background-color: palegreen;
+            text-align: center;
+
+        }
+
+        .myerrorstyle {
+            background-color: red;
+            text-align: left;
+
+        }
+    </style>
+    <script>
+        function validate() {
+            var userID = document.getElementById('username').value;
+            console.log("User ID : " + userID.length)
+            //document.getElementById('errormessage').innerHTML = '';
+            var divObject = document.getElementsByClassName('myerrorstyle')[0];
+            divObject.innerHTML = '';
+            if (userID.length == 0) {
+                document.getElementById('errormessage').innerHTML = 'User Id cant be empty';
+
+            }
+
+
+        }
+    </script>
+
+<body>
+    <div id=errormessage class="myerrorstyle"></div>
+    <p class='mystyle'>This is demo <br></p>
+    <p class='mystyle'>This is Good Demo <br></p>
+
+    <form name="loginfrm">
+        User ID:<input type="text" name="userid" id="username"><br>
+        Password:<input type="password" name="passtxt" id="pass"><br>
+        <input type="button" value="Login" onclick='validate();'>
+        <input type="button" value="Cancel">
+    </form>
+</body>
+</head>
+
+</html>

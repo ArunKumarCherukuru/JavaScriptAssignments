@@ -1,0 +1,18 @@
+{
+  "name": "assignment4",
+  "version": "1.0.0",
+  "description": "This is test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arun",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.4.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "angular": "^1.7.8"
+  }
+}
